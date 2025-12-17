@@ -1,13 +1,11 @@
-//go:build go1.22 && !tinygo
-// +build go1.22,!tinygo
-
 package chi
 
 import (
-	"github.com/metacubex/http"
-	"github.com/metacubex/http/httptest"
 	"strings"
 	"testing"
+
+	"github.com/metacubex/http"
+	"github.com/metacubex/http/httptest"
 )
 
 func TestPathValue(t *testing.T) {

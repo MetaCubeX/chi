@@ -1,6 +1,3 @@
-//go:build go1.23 && !tinygo
-// +build go1.23,!tinygo
-
 package chi
 
 import "github.com/metacubex/http"
