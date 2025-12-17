@@ -5,9 +5,9 @@ package middleware
 
 import (
 	"bufio"
+	"github.com/metacubex/http"
 	"io"
 	"net"
-	"net/http"
 )
 
 // NewWrapResponseWriter wraps an http.ResponseWriter, returning a proxy that allows you to

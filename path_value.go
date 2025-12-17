@@ -1,10 +1,9 @@
 //go:build go1.22 && !tinygo
 // +build go1.22,!tinygo
 
-
 package chi
 
-import "net/http"
+import "github.com/metacubex/http"
 
 // supportsPathValue is true if the Go version is 1.22 and above.
 //

@@ -2,8 +2,8 @@ package chi
 
 import (
 	"fmt"
+	"github.com/metacubex/http"
 	"log"
-	"net/http"
 	"testing"
 )
 

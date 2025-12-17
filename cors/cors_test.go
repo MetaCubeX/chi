@@ -1,8 +1,8 @@
 package cors
 
 import (
-	"net/http"
-	"net/http/httptest"
+	"github.com/metacubex/http"
+	"github.com/metacubex/http/httptest"
 	"regexp"
 	"strings"
 	"testing"

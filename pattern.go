@@ -3,7 +3,7 @@
 
 package chi
 
-import "net/http"
+import "github.com/metacubex/http"
 
 // supportsPattern is true if the Go version is 1.23 and above.
 //

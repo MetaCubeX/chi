@@ -4,10 +4,10 @@ import (
 	"compress/flate"
 	"compress/gzip"
 	"fmt"
+	"github.com/metacubex/http"
+	"github.com/metacubex/http/httptest"
 	"io"
 	"io/ioutil"
-	"net/http"
-	"net/http/httptest"
 	"strings"
 	"testing"
 

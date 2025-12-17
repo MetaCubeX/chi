@@ -3,8 +3,8 @@ package middleware
 import (
 	"bytes"
 	"context"
+	"github.com/metacubex/http"
 	"log"
-	"net/http"
 	"os"
 	"runtime"
 	"time"

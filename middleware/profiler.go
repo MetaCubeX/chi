@@ -5,8 +5,10 @@ package middleware
 
 import (
 	"expvar"
-	"net/http"
-	"net/http/pprof"
+	"fmt"
+
+	"github.com/metacubex/http"
+	"github.com/metacubex/http/pprof"
 
 	"github.com/metacubex/chi"
 )
@@ -36,7 +38,7 @@ func Profiler() http.Handler {
 	r.HandleFunc("/pprof/profile", pprof.Profile)
 	r.HandleFunc("/pprof/symbol", pprof.Symbol)
 	r.HandleFunc("/pprof/trace", pprof.Trace)
-	r.Handle("/vars", expvar.Handler())
+	r.Handle("/vars", http.HandlerFunc(expvarHandler))
 
 	r.Handle("/pprof/goroutine", pprof.Handler("goroutine"))
 	r.Handle("/pprof/threadcreate", pprof.Handler("threadcreate"))
@@ -46,4 +48,18 @@ func Profiler() http.Handler {
 	r.Handle("/pprof/allocs", pprof.Handler("allocs"))
 
 	return r
+}
+
+func expvarHandler(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json; charset=utf-8")
+	fmt.Fprintf(w, "{\n")
+	first := true
+	expvar.Do(func(kv expvar.KeyValue) {
+		if !first {
+			fmt.Fprintf(w, ",\n")
+		}
+		first = false
+		fmt.Fprintf(w, "%q: %s", kv.Key, kv.Value)
+	})
+	fmt.Fprintf(w, "\n}\n")
 }

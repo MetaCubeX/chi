@@ -2,7 +2,7 @@ package render
 
 import (
 	"context"
-	"net/http"
+	"github.com/metacubex/http"
 	"strings"
 )
 

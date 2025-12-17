@@ -1,6 +1,6 @@
 package middleware
 
-import "net/http"
+import "github.com/metacubex/http"
 
 // New will create a new middleware handler from a http.Handler.
 func New(h http.Handler) func(next http.Handler) http.Handler {

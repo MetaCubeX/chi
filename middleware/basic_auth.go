@@ -3,7 +3,7 @@ package middleware
 import (
 	"crypto/subtle"
 	"fmt"
-	"net/http"
+	"github.com/metacubex/http"
 )
 
 // BasicAuth implements a simple middleware handler for adding basic http auth to a route.

@@ -4,7 +4,7 @@ package middleware
 // https://github.com/zenazn/goji/tree/master/web/middleware
 
 import (
-	"net/http"
+	"github.com/metacubex/http"
 	"time"
 )
 

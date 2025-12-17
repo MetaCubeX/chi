@@ -1,7 +1,7 @@
 package render
 
 import (
-	"net/http"
+	"github.com/metacubex/http"
 	"reflect"
 )
 

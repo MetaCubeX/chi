@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"encoding/xml"
 	"errors"
+	"github.com/metacubex/http"
 	"io"
-	"net/http"
 
 	"github.com/ajg/form"
 )

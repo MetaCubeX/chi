@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"encoding/xml"
 	"fmt"
-	"net/http"
+	"github.com/metacubex/http"
 	"reflect"
 )
 

@@ -1,9 +1,9 @@
 package middleware
 
 import (
+	"github.com/metacubex/http"
+	"github.com/metacubex/http/httptest"
 	"io/ioutil"
-	"net/http"
-	"net/http/httptest"
 	"strings"
 	"sync"
 	"testing"

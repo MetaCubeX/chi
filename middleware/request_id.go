@@ -8,7 +8,7 @@ import (
 	"crypto/rand"
 	"encoding/base64"
 	"fmt"
-	"net/http"
+	"github.com/metacubex/http"
 	"os"
 	"strings"
 	"sync/atomic"

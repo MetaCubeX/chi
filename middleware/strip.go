@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"fmt"
-	"net/http"
+	"github.com/metacubex/http"
 	"strings"
 
 	"github.com/metacubex/chi"
