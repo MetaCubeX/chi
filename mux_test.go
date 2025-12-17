@@ -1693,11 +1693,11 @@ func TestMuxContextIsThreadSafe(t *testing.T) {
 
 	wg := sync.WaitGroup{}
 
-	for range 100 {
+	for i := 0; i < 100; i++ {
 		wg.Add(1)
 		go func() {
 			defer wg.Done()
-			for range 10000 {
+			for j := 0; j < 10000; j++ {
 				w := httptest.NewRecorder()
 				r, err := http.NewRequest("GET", "/ok", nil)
 				if err != nil {
