@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"net/http"
+	"github.com/metacubex/http"
 )
 
 // RequestSize is a middleware that will limit request sizes to a specified

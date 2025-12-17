@@ -6,9 +6,9 @@ import (
 	"compress/gzip"
 	"errors"
 	"fmt"
+	"github.com/metacubex/http"
 	"io"
 	"net"
-	"net/http"
 	"strings"
 	"sync"
 )

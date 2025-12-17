@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"context"
-	"net/http"
+	"github.com/metacubex/http"
 )
 
 // WithValue is a middleware that sets a given key/value in a context chain.

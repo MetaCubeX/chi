@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"context"
-	"net/http"
+	"github.com/metacubex/http"
 	"strings"
 
 	"github.com/metacubex/chi"

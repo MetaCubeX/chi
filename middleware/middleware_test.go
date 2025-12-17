@@ -1,15 +1,16 @@
 package middleware
 
 import (
-	"crypto/tls"
 	"io"
-	"net/http"
-	"net/http/httptest"
 	"path"
 	"reflect"
 	"runtime"
 	"testing"
 	"time"
+
+	"github.com/metacubex/http"
+	"github.com/metacubex/http/httptest"
+	"github.com/metacubex/tls"
 )
 
 var testdataDir string

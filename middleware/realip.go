@@ -4,8 +4,8 @@ package middleware
 // https://github.com/zenazn/goji/tree/master/web/middleware
 
 import (
+	"github.com/metacubex/http"
 	"net"
-	"net/http"
 	"strings"
 )
 

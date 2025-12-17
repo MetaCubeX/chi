@@ -2,8 +2,8 @@ package middleware_test
 
 import (
 	"fmt"
-	"net/http"
-	"net/http/httptest"
+	"github.com/metacubex/http"
+	"github.com/metacubex/http/httptest"
 
 	"github.com/metacubex/chi"
 	"github.com/metacubex/chi/middleware"

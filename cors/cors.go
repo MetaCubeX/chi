@@ -19,8 +19,8 @@
 package cors
 
 import (
+	"github.com/metacubex/http"
 	"log"
-	"net/http"
 	"os"
 	"strconv"
 	"strings"

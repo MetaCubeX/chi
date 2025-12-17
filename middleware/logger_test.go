@@ -3,9 +3,9 @@ package middleware
 import (
 	"bufio"
 	"bytes"
+	"github.com/metacubex/http"
+	"github.com/metacubex/http/httptest"
 	"net"
-	"net/http"
-	"net/http/httptest"
 	"testing"
 	"time"
 )

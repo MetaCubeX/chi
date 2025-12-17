@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"net/http"
+	"github.com/metacubex/http"
 	"path"
 
 	"github.com/metacubex/chi"

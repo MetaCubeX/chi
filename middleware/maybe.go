@@ -1,6 +1,6 @@
 package middleware
 
-import "net/http"
+import "github.com/metacubex/http"
 
 // Maybe middleware will allow you to change the flow of the middleware stack execution depending on return
 // value of maybeFn(request). This is useful for example if you'd like to skip a middleware handler if

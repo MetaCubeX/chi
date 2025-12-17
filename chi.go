@@ -7,7 +7,7 @@
 //	package main
 //
 //	import (
-//		"net/http"
+//		"github.com/metacubex/http"
 //
 //		"github.com/metacubex/chi"
 //		"github.com/metacubex/chi/middleware"
@@ -54,7 +54,7 @@
 //	"/date/{yyyy:\\d\\d\\d\\d}/{mm:\\d\\d}/{dd:\\d\\d}" matches "/date/2017/04/01"
 package chi
 
-import "net/http"
+import "github.com/metacubex/http"
 
 // NewRouter returns a new Mux object that implements the Router interface.
 func NewRouter() *Mux {

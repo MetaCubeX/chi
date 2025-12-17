@@ -2,8 +2,8 @@ package middleware
 
 import (
 	"context"
+	"github.com/metacubex/http"
 	"net"
-	"net/http"
 	"net/netip"
 	"strings"
 )

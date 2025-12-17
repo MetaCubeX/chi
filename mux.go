@@ -3,7 +3,7 @@ package chi
 import (
 	"context"
 	"fmt"
-	"net/http"
+	"github.com/metacubex/http"
 	"strings"
 	"sync"
 )

@@ -6,7 +6,7 @@ package chi
 
 import (
 	"fmt"
-	"net/http"
+	"github.com/metacubex/http"
 	"regexp"
 	"sort"
 	"strconv"

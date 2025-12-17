@@ -1,6 +1,6 @@
 package chi
 
-import "net/http"
+import "github.com/metacubex/http"
 
 // Chain returns a Middlewares type from a slice of middleware handlers.
 func Chain(middlewares ...func(http.Handler) http.Handler) Middlewares {
