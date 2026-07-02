@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"net/http/httptest"
 
-	"github.com/go-chi/chi/v5"
-	"github.com/go-chi/chi/v5/middleware"
+	"github.com/metacubex/chi"
+	"github.com/metacubex/chi/middleware"
 )
 
 // Example_clientIP shows how to choose a ClientIPFrom* middleware. There is

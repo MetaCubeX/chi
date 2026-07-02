@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/go-chi/chi/v5"
+	"github.com/metacubex/chi"
 )
 
 // StripSlashes is a middleware that will match request paths with a trailing
